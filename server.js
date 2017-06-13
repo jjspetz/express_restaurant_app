@@ -19,18 +19,18 @@ app.get('/', function(request, response) {
   response.render('index.hbs');
 });
 
-app.get('/search', function(request, response, next) {
-  var search = request.query.search;
-  var query = `SELECT * FROM restaurant WHERE restaurant.name ilike '%${search}%'`;
-  db.any(query)
-    then(function(resultsArray)){
-      response.render('search.hbs')
-      results: resultsArray
-    )};
-    console.log(resultsArray);
-  });
-  .catch(next);
-});
+// app.get('/search', function(request, response, next) {
+//   var search = request.query.search;
+//   var query = `SELECT * FROM restaurant WHERE restaurant.name ilike '%${search}%'`;
+//   db.any(query)
+//     then(function(resultsArray)){
+//       response.render('search.hbs')
+//       results: resultsArray
+//     )};
+//     console.log(resultsArray);
+//   });
+//   .catch(next);
+// });
 
 app.get('/reviews', function(request, response, next) {
   db.any('select * from restaurant_reviews')
