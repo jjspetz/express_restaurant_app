@@ -1,0 +1,40 @@
+
+<!-- <form action="/add_todo" method="POST">
+  <label>New to_do: </label><input type="text" name="to_do">
+</form> -->
+
+<form action="/submit" method="POST">
+
+  <label>Restaurant</label>
+  <input type = "radio" name= "establishment" value = '1'> Whats up yeyah!
+  <input type = "radio" name= "establishment" value = '2'> Shakies
+  <input type = "radio" name= "establishment" value = '3'> CracDonalds
+  <input type = "radio" name= "establishment" value = '4'> Smack n the Box
+  <input type = "radio" name= "establishment" value = '5'> Charlie Murphies BBQ
+  <input type = "radio" name= "establishment" value = '6'> Don Vitos<br>
+
+  <label>Name</label>
+  <input type = "text" name="name">
+  <br><br>
+
+  <label>Rating</label>
+  <input type = "radio" name="stars" value = "5"> 5
+  <input type = "radio" name="stars" value = "4"> 4
+  <input type = "radio" name="stars" value = "3"> 3
+  <input type = "radio" name="stars" value = "2"> 2
+  <input type = "radio" name="stars" value = "1"> 1<br>
+
+  <label>Review</label>
+  <input type = "text" name="review">
+  <br><br>
+
+  <button type = "submit">Submit</button>
+
+</form>
+
+<ul>
+  {{#each reviews}}
+    <li>{{name}} rated {{id}} {{stars}} stars</li>
+    <li>He says {{review}}</li>
+  {{/each}}
+</ul>

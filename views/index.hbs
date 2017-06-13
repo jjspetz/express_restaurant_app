@@ -1,0 +1,15 @@
+
+<form action="/search" method="get">
+  <label>Find a Restaurant</label><input type="text" name="search">
+</form>
+
+  <button type = "submit">Find Now!</button>
+
+</form>
+
+<ul>
+  {{#each reviews}}
+    <li>{{name}} rated {{id}} {{stars}} stars</li>
+    <li>He says {{review}}</li>
+  {{/each}}
+</ul>

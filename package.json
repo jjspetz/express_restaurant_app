@@ -1,0 +1,24 @@
+{
+  "name": "express_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express_example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "crypto": "0.0.3",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "hbs": "^4.0.1",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "pbkdf2": "^3.0.12",
+    "pg-promise": "^5.9.0",
+    "socket.io": "^2.0.2"
+  }
+}
